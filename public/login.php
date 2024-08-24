@@ -9,7 +9,7 @@
 
 <body class="bg-gray-900 font-body">
   <?php
-  require '../function/google_auths.php';
+  require '../function/google_auth.php';
   // authenticate code from Google OAuth Flow
   if (isset($_GET['code'])) {
    require '../function/google_profile.php';
