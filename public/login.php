@@ -9,13 +9,11 @@
 
 <body class="bg-gray-900 font-body">
   <?php
-  require '../function/google_auth.php';
+  require '../function/google_auths.php';
   // authenticate code from Google OAuth Flow
   if (isset($_GET['code'])) {
    require '../function/google_profile.php';
-
-    header("location: pages/dashboard.php");
-
+   header("Location: pages/dashboard.php");
   } else {
     include 'pages/login.php';
   } ?>
