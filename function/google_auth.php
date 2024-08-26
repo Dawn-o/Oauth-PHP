@@ -2,7 +2,7 @@
 
 session_start();
 
-$env = parse_ini_file('.env');
+$env = parse_ini_file('../.env');
 
 $clientID = $env['CLIENT_ID'];
 $clientSecret = $env['CLIENT_SECRET'];
@@ -25,9 +25,8 @@ if (isset($_GET['logout'])) {
     }
     session_destroy();
 
-    Header("Location: http://localhost/Oauth/public/login.php");
+    Header("Location: ../public/login.php");
     exit;
-
 }
 if (!isset($_GET['code'])) {
     $authorizationUrl = 'https://accounts.google.com/o/oauth2/v2/auth';
@@ -41,8 +40,6 @@ if (!isset($_GET['code'])) {
     header("Location: " . $authorizationUrl . '?' . http_build_query($params));
     exit;
 }
-
-
 
 $accessTokenUrl = 'https://oauth2.googleapis.com/token';
 
@@ -83,11 +80,6 @@ if (isset($accessTokenData['access_token'])) {
     echo "<img src='$userInfoData[picture]' />";
     echo "<br />";
     echo "<a href='?logout'>Logout</a>";
-    echo "<br />";
-
-    $name = $userInfoData['name'];
-    $email = $userInfoData['email'];
-    $picture = $userInfoData['picture'];
 
 } else {
     echo 'Error Retrieving Access Token';
