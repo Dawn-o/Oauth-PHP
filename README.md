@@ -9,7 +9,7 @@ This project demonstrates how to set up Google OAuth 2.0 authentication using PH
 Start by cloning the repository to your local environment:
 
 ```bash
-git clone https://github.com/your-username/oauth-php.git
+git clone https://github.com/Dawn-o/Oauth-PHP.git
 cd oauth-php
 ```
 
