@@ -61,14 +61,58 @@ To configure your `.env` file for OAuth 2.0, follow these steps:
    ```
    Replace <YOUR_CLIENT_ID> and <YOUR_CLIENT_SECRET> with the actual values obtained from Google Cloud Console.
 
-   ### Step 4: Run the Project
+### Step 4: Run the Project
 
-To run the project:
+To run the project, you have two options: using XAMPP or the PHP built-in server.
 
-1. **Start Your Local Server:**
+#### Option 1: Using XAMPP
 
-   Serve your PHP files locally. If you are using a local development server like PHP's built-in server, you can start it with:
+1. **Install and Configure XAMPP:**
 
-   ```bash
-   php -S localhost:8000
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) if you haven't already.
+   - Start the Apache and MySQL services from the XAMPP Control Panel.
+
+2. **Move Project to XAMPP Directory:**
+
+   - Move your project directory (e.g., `oauth-php`) to the `htdocs` directory inside your XAMPP installation (usually located at `C:\xampp\htdocs`).
+
+3. **Access the Project:**
+
+   - Open your web browser and navigate to `http://localhost/oauth-php` (or whatever the path is relative to `htdocs`).
+
+4. **Verify OAuth Configuration:**
+
+   - Test the OAuth 2.0 authentication flow to ensure that your setup is correct. Follow the authentication process and check for any errors.
+
+5. **Check for Errors:**
+
+   - Monitor your browser console and XAMPP's Apache error logs for any issues during the authentication process and resolve them as needed.
+
+#### Option 2: Using PHP Built-in Server (Easier Setup)
+
+For a quicker setup without needing XAMPP, you can use PHP’s built-in server:
+
+1. **Start the PHP Built-in Server:**
+
+   - Open your terminal or command prompt.
+   - Navigate to your project directory.
+   - Run the following command to start the server:
+
+     ```bash
+     php -S localhost:8000
+     ```
+
+2. **Access the Project:**
+
+   - Open your web browser and go to `http://localhost:8000` to view your project.
+
+3. **Verify OAuth Configuration:**
+
+   - Test the OAuth 2.0 authentication flow to ensure everything is set up correctly.
+
+4. **Check for Errors:**
+
+   - Watch for any errors or issues in the browser console and terminal, and resolve them as needed.
+
+
 
