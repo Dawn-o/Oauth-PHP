@@ -17,6 +17,7 @@ if (!isset($_SESSION['authenticate'])) {
         <meta name="description" content="Meet our talented team driving the success of our platform." />
         <meta name="keywords" content="team, web development, technology" />
         <link href="../src/output.css" rel="stylesheet" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
         <title>Main Page</title>
     </head>
 
