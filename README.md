@@ -10,7 +10,9 @@ Start by cloning the repository to your local environment:
 
 ```bash
 git clone https://github.com/Dawn-o/Oauth-PHP.git
-cd oauth-php
+```
+```bash
+cd Oauth-PHP
 ```
 
 ### Step 2: Install Tailwind CSS
