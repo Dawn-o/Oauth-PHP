@@ -2,13 +2,13 @@
 
 session_start();
 
-$env = parse_ini_file('../.env');
+$_ENV = parse_ini_file('../.env');
 
-$clientID = $env['CLIENT_ID'];
-$clientSecret = $env['CLIENT_SECRET'];
-$redirectUri = $env['REDIRECT_URI'];
+$clientID = $_ENV['CLIENT_ID'];
+$clientSecret = $_ENV['CLIENT_SECRET'];
+$redirectUri = $_ENV['REDIRECT_URI'];
 
-$tokenRevocationUrl = $env['TOKEN_REVOCATION_URL'];
+$tokenRevocationUrl = $_ENV['TOKEN_REVOCATION_URL'];
 
 if (isset($_GET['logout'])) {
     $accesToken = $_SESSION['access_token'];
@@ -25,7 +25,7 @@ if (isset($_GET['logout'])) {
     }
     session_destroy();
 
-    Header("Location: ../public/login.php");
+    Header("Location: ../public/login.php?message=logout_successful");
     exit;
 }
 if (!isset($_GET['code'])) {
@@ -73,14 +73,13 @@ if (isset($accessTokenData['access_token'])) {
 
     $userInfoData = json_decode($userInfo, true);
 
-    echo "Name : $userInfoData[name]";
-    echo "<br />";
-    echo "Email : $userInfoData[email]";
-    echo "<br />";
-    echo "<img src='$userInfoData[picture]' />";
-    echo "<br />";
-    echo "<a href='?logout'>Logout</a>";
+    $_SESSION['authenticate'] = true;
 
+    $_SESSION['name'] = $userInfoData['name'];
+    $_SESSION['email'] = $userInfoData['email'];
+    $_SESSION['picture'] = $userInfoData['picture'];
+
+    header("Location: ../public/main.php?message=login_successful");
 } else {
     echo 'Error Retrieving Access Token';
 }
