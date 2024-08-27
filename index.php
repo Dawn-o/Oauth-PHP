@@ -14,7 +14,7 @@ if (isset($_SESSION['authenticate'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../src/output.css" rel="stylesheet" />
+    <link href="src/output.css" rel="stylesheet" />
     <title>Login</title>
   </head>
 
@@ -23,7 +23,7 @@ if (isset($_SESSION['authenticate'])) {
       <div class="bg-gray-800 rounded-lg shadow-lg p-8 max-w-lg w-full">
         <h1 class="text-white text-3xl mb-4 font-semibold">Welcome back</h1>
 
-        <a href="../function/google_auth.php"
+        <a href="function/google_auth.php"
           type="button"
           class="text-gray-400 hover:text-white w-full bg-transparent hover:bg-gray-600 border border-gray-600 focus:ring-4 focus:outline-none ring-gray-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 mb-2 justify-center">
           <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" class="w-7 h-7" alt="">
@@ -75,7 +75,7 @@ if (isset($_SESSION['authenticate'])) {
         </p>
       </div>
     </div>
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 
   </html>

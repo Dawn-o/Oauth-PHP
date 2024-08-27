@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['authenticate'])) {
-    header("location: login.php?message=please_login_first");
+    header("location: index.php?message=please_login_first");
 } else {
 
 ?>

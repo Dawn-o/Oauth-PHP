@@ -25,7 +25,7 @@ if (isset($_GET['logout'])) {
     }
     session_destroy();
 
-    Header("Location: ../public/login.php?message=logout_successful");
+    Header("Location: ../index.php?message=logout_successful");
     exit;
 }
 if (!isset($_GET['code'])) {
