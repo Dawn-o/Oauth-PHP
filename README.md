@@ -15,26 +15,13 @@ git clone https://github.com/Dawn-o/Oauth-PHP.git
 cd Oauth-PHP
 ```
 
-### Step 2: Install Tailwind CSS
-
-You have two options for adding Tailwind CSS to your project:
-
-#### Option 1: Install Tailwind CSS via npm
-
-To install Tailwind CSS using npm, run the following command:
-
+### Step 2: Install Tailwind CSS & Flowbite
+To install Tailwind CSS and Flowbite as dependencies in your project, run the following command:
 ```bash
-npm install -D tailwindcss
+npm install -D tailwindcss flowbite
 ```
 This will add Tailwind CSS as a development dependency in your project.
 
-#### Option 2: Use Tailwind CSS via CDN
-For a quicker setup, you can use Tailwind CSS via CDN. Add the following link to the <head> section of your HTML file:
-
-```bash
-<script src="https://cdn.tailwindcss.com"></script>
-```
-This will load Tailwind CSS directly from the CDN without the need for npm installation.
 
 ### Step 3: Set Up Environment Variables
 
