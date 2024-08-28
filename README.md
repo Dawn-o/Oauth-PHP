@@ -20,7 +20,7 @@ To install Tailwind CSS and Flowbite as dependencies in your project, run the fo
 ```bash
 npm install -D tailwindcss flowbite
 ```
-This will add Tailwind CSS as a development dependency in your project.
+This will add both Tailwind CSS and Flowbite as development dependencies in your project.
 
 
 ### Step 3: Set Up Environment Variables
