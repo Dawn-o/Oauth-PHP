@@ -44,7 +44,7 @@ To configure your `.env` file for OAuth 2.0, follow these steps:
 
    - Go to the [Google Cloud Console](https://console.cloud.google.com/apis/dashboard).
    - Create a new project or select an existing one.
-   - Navigate to "Credentials" and click on "Create Credentials" > "OAuth 2.0 Client ID."
+   - Navigate to "Credentials" and click on "Create Credentials" > "OAuth Client ID."
    - Set the **Authorized redirect URI** to:
 
      ```
