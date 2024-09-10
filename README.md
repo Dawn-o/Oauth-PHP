@@ -52,9 +52,7 @@ To configure your `.env` file for OAuth 2.0, follow these steps:
 
 ### Step 4: Run the Project
 
-To run the project, you have two options: using XAMPP or the PHP built-in server.
-
-#### Option 1: Using XAMPP
+To run the project, you can using XAMPP
 
 1. **Install and Configure XAMPP:**
 
@@ -76,30 +74,6 @@ To run the project, you have two options: using XAMPP or the PHP built-in server
 5. **Check for Errors:**
 
    - Monitor your browser console and XAMPP's Apache error logs for any issues during the authentication process and resolve them as needed.
-
-#### Option 2: Using PHP Built-in Server (Easier Setup)
-
-For a quicker setup without needing XAMPP, you can use PHP’s built-in server:
-
-1. **Start the PHP Built-in Server:**
-
-   - Open your terminal or command prompt.
-   - Navigate to your project directory.
-   - Run the following command to start the server:
-
-     ```bash
-     php -S localhost:8000
-     ```
-
-2. **Access the Project:**
-
-   - Open your web browser and go to `http://localhost:8000` to view your project.
-
-3. **Verify OAuth Configuration:**
-
-   - Test the OAuth 2.0 authentication flow to ensure everything is set up correctly.
-
-4. **Check for Errors:**
 
    - Watch for any errors or issues in the browser console and terminal, and resolve them as needed.
 
